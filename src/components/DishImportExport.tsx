@@ -26,9 +26,9 @@ export function DishImportExport({ dishes, onImport }: DishImportExportProps) {
     try {
       const importedDishes = await importDishes(file);
       onImport(importedDishes);
-      alert(`Successfully imported ${importedDishes.length} dishes!`);
+      alert(`¡Se importaron exitosamente ${importedDishes.length} platos!`);
     } catch (error) {
-      alert(`Error importing file: ${error instanceof Error ? error.message : 'Unknown error'}`);
+      alert(`Error al importar el archivo: ${error instanceof Error ? error.message : 'Error desconocido'}`);
     }
 
     // Reset the input
@@ -37,13 +37,13 @@ export function DishImportExport({ dishes, onImport }: DishImportExportProps) {
 
   return (
     <div className="import-export">
-      <h3>Backup & Restore</h3>
+      <h3>Respaldo y Restaurar</h3>
       <div className="button-group">
         <button className="export-button" onClick={handleExport}>
-          💾 Export Dishes
+          💾 Exportar Platos
         </button>
         <button className="import-button" onClick={handleImportClick}>
-          📂 Import Dishes
+          📂 Importar Platos
         </button>
         <input
           ref={fileInputRef}

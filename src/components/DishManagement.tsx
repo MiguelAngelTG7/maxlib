@@ -26,23 +26,23 @@ export function DishManagement({
   return (
     <div className="dish-management">
       <div className="add-dish-section">
-        <h3>Add a new dish</h3>
+        <h3>Agregar un nuevo plato</h3>
         <form onSubmit={handleSubmit} className="add-form">
           <input
             type="text"
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
-            placeholder="Enter dish name..."
+            placeholder="Ingresa el nombre del plato..."
             className="input-field"
           />
           <button type="submit" className="add-button">
-            + Add Dish
+            + Agregar Plato
           </button>
         </form>
       </div>
 
       <div className="dishes-list-section">
-        <h3>Your Dishes ({dishes.length})</h3>
+        <h3>Tus Platos ({dishes.length})</h3>
         <ul className="dishes-list">
           {dishes.map((dish) => (
             <li key={dish.id} className="dish-item">

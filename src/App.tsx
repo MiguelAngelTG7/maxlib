@@ -40,7 +40,7 @@ function App() {
   return (
     <div className="app-container">
       <header className="app-header">
-        <h1>🍳 What to Cook Today?</h1>
+        <h1>🍳 ¿Qué cocinar hoy?</h1>
       </header>
 
       <main className="app-main">
