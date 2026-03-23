@@ -1,0 +1,101 @@
+.dish-management {
+  flex: 0;  /* Change from flex: 1 */
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+  border-top: 1px solid #e0e0e0;
+  width: 100%;  /* Full width */
+}
+
+.add-dish-section {
+  max-width: 500px;
+  margin: 0 auto 40px;
+}
+
+.add-dish-section h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.add-form {
+  display: flex;
+  gap: 10px;
+}
+
+.input-field {
+  flex: 1;
+  padding: 12px 15px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.add-button {
+  padding: 12px 25px;
+  background-color: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.add-button:hover {
+  background-color: #764ba2;
+}
+
+.dishes-list-section {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.dishes-list-section h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.dishes-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dish-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: white;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dish-item span {
+  font-size: 16px;
+  color: #333;
+}
+
+.delete-button {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+  background-color: #ee5a52;
+}
